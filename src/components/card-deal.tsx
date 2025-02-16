@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Button from './ui/button';
 import Gradients from './ui/gradients';
-import images from '@/assets/images/images';
+import images from '@/assets/images';
 import Link from 'next/link';
 
 const CardDeal = () => {

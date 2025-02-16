@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Button from './ui/button';
-import images from '@/assets/images/images';
+import images from '@/assets/images';
 import { PaperPlaneIcon, ShieldIcon, StarIcon } from '@/assets/svgs';
 import Gradients from './ui/gradients';
 import { cn } from '@/lib/utils';

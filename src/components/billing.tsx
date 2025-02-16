@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Gradients from './ui/gradients';
 import { image } from 'motion/react-client';
-import images from '@/assets/images/images';
+import images from '@/assets/images';
 
 const Billing = () => {
   return (

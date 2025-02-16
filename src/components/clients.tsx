@@ -1,4 +1,4 @@
-import images from '@/assets/images/images';
+import images from '@/assets/images';
 import Image from 'next/image';
 
 // Clients component displays a row of client logos

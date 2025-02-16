@@ -1,4 +1,4 @@
-import images from '@/assets/images/images';
+import images from '@/assets/images';
 import { QuoteIcon } from '@/assets/svgs';
 import { cn } from '@/lib/utils';
 import Image, { StaticImageData } from 'next/image';

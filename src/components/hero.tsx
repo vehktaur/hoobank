@@ -1,4 +1,4 @@
-import images from '@/assets/images/images';
+import images from '@/assets/images';
 import { ArrowUpIcon, DiscountIcon, EllipseGradient } from '@/assets/svgs';
 import Image from 'next/image';
 import Gradients from './ui/gradients';

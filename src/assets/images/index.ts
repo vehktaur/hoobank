@@ -11,7 +11,7 @@ import binance from './binance.svg';
 import coinbase from './coinbase.svg';
 import dropbox from './dropbox.svg';
 
-export default {
+const images = {
   robot_palm,
   card_deal,
   payment,
@@ -25,3 +25,5 @@ export default {
   coinbase,
   dropbox,
 };
+
+export default images;
