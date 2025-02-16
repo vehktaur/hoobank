@@ -1,11 +1,25 @@
-import Hero from "@/components/hero";
-
-
+import {
+  Billing,
+  CardDeal,
+  Clients,
+  Hero,
+  Metrics,
+  MoneyBusiness,
+  Testimonials,
+  TryNow,
+} from '@/components';
 
 export default function Home() {
   return (
-    <main className="nav-gap ">
+    <main className='nav-gap'>
       <Hero />
+      <Metrics />
+      <MoneyBusiness />
+      <Billing />
+      <CardDeal />
+      <Testimonials />
+      <Clients />
+      <TryNow />
     </main>
   );
 }

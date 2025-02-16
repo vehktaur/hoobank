@@ -25,8 +25,7 @@ export default {
           'linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%)',
         'gray-gradient':
           'linear-gradient(153.47deg,rgba(255, 255, 255, 0) -341.94%, #14101d 95.11%)',
-        'pink-gradient':
-          'linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%)',
+        'pink-gradient': 'linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%)',
         'turq-linear-gradient':
           'linear-gradient(158deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%)',
         'turq-radial-gradient':
@@ -34,6 +33,7 @@ export default {
       },
       borderRadius: {
         sxl: '0.625rem',
+        '2.5xl': '1.25rem',
       },
       boxShadow: {
         shade: '0px 20px 100px -10px rgba(66, 71, 91, 0.1)',

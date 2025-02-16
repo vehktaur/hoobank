@@ -1,9 +1,16 @@
 import { LogoIcon } from '@/assets/svgs';
+import { cn } from '@/lib/utils';
 
-const Logo = () => {
+const Logo = ({ className, ...props }: { className?: string }) => {
   return (
-    <div className='flex select-none items-center gap-1 font-semibold ~text-base/lg'>
-      <LogoIcon />
+    <div
+      className={cn(
+        'flex select-none items-center gap-1 font-semibold leading-none ~text-base/lg',
+        className,
+      )}
+      {...props}
+    >
+      <LogoIcon className='size-[2em]' />
       <span className='text-white'>
         Hoo<span className='text-turq'>Bank</span>
       </span>

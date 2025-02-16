@@ -1,6 +1,7 @@
 import images from '@/assets/images/images';
 import { ArrowUpIcon, DiscountIcon, EllipseGradient } from '@/assets/svgs';
 import Image from 'next/image';
+import Gradients from './ui/gradients';
 
 const Hero = () => {
   return (
@@ -48,10 +49,10 @@ const Hero = () => {
           </p>
 
           {/* Colourful bg gradients */}
-          <Gradients className='absolute -left-[10%] top-1/2 h-[90%] w-[35%] -translate-y-1/2' />
+          <Gradients className='absolute -left-[10%] top-0 h-full w-[35%]' />
         </article>
 
-        <div className='relative ml-auto max-w-[40rem] pl-5 pt-16'>
+        <div className='relative ml-auto max-w-[40rem] pl-5 ~pt-8/16'>
           <Image
             className='relative z-[3] w-full object-contain'
             src={images.robot_palm}
@@ -67,14 +68,3 @@ const Hero = () => {
   );
 };
 export default Hero;
-
-{
-  /* Background Gradients */
-}
-const Gradients = ({ className }: { className?: string }) => (
-  <div className={className}>
-    <div className='pink-gradient absolute top-0 z-0 h-[35%] w-[40%]' />
-    <div className='white-gradient absolute bottom-0 z-0 size-[80%]' />
-    <div className='blue-gradient absolute bottom-20 right-20 z-0 size-[50%]' />
-  </div>
-);
