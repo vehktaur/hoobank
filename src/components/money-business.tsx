@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import Button from './ui/button';
-import images from '@/assets/images';
 import { PaperPlaneIcon, ShieldIcon, StarIcon } from '@/assets/svgs';
 import Gradients from './ui/gradients';
 import { cn } from '@/lib/utils';
@@ -13,7 +11,7 @@ const MoneyBusiness = () => {
         {/* Left Column */}
         <article>
           <h2 className='section-heading max-w-[38rem]'>
-            You do the business, we'll handle the money.
+            You do the business, we&apos;ll handle the money.
           </h2>
 
           <p className='mb-4 max-w-[35.625rem]'>

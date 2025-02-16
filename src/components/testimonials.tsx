@@ -33,7 +33,7 @@ const Testimonials = () => {
             image={images.steve}
             position='Founder & Leader'
           >
-            Money makes your life easier. If you're lucky to have it, you're
+            Money makes your life easier. If you&apos;re lucky to have it, you&apos;re
             lucky.
           </QuoteCard>
           <QuoteCard

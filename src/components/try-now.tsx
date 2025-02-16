@@ -9,7 +9,7 @@ const TryNow = () => {
       <div className='container flex flex-col items-start justify-between gap-8 rounded-2.5xl bg-black-gradient ~px-6/24 ~py-12/[4.5rem] sm:flex-row sm:items-center'>
         {/* Heading and description text */}
         <div>
-          <h2 className='section-heading'>Let's try our service now!</h2>
+          <h2 className='section-heading'>Let&apos;s try our service now!</h2>
           <p className='max-w-[29rem]'>
             Everything you need to accept card payments and grow your business
             anywhere on the planet.
