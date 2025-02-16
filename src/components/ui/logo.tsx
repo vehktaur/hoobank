@@ -5,7 +5,7 @@ const Logo = ({ className, ...props }: { className?: string }) => {
   return (
     <div
       className={cn(
-        'flex select-none items-center gap-1 font-semibold leading-none ~text-base/lg',
+        'flex select-none items-center gap-1 font-semibold leading-none',
         className,
       )}
       {...props}

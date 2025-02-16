@@ -59,7 +59,7 @@ const Navbar = () => {
     >
       <div className='container flex w-full items-center justify-between gap-8'>
         {/* Site logo */}
-        <NavLink className='block' href='/'>
+        <NavLink className='block ~text-base/lg' href='/'>
           <Logo />
         </NavLink>
 
