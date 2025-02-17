@@ -52,7 +52,7 @@ const Testimonials = () => {
             opacity: 1,
             scaleX: 1,
             x: 0,
-            stagger: 0.5,
+            stagger: 1,
             duration: 1.5,
           },
         );
