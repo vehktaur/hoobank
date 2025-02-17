@@ -15,7 +15,7 @@ const Metrics = () => {
       scrollTrigger: {
         trigger: '#metrics',
         scrub: true,
-        pin: '#metrics .container',
+        pin: '#metrics',
       },
     });
 

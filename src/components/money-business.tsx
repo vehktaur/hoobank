@@ -5,10 +5,65 @@ import { PaperPlaneIcon, ShieldIcon, StarIcon } from '@/assets/svgs';
 import Gradients from './ui/gradients';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { gsap, useGSAP } from '@/lib/gsap';
+import { useRef } from 'react';
 
 const MoneyBusiness = () => {
+  const tl = useRef<GSAPTimeline>(null);
+
+  useGSAP(
+    () => {
+      tl.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#money_business',
+          scrub: true,
+          pin: '#money_business',
+        },
+      });
+
+      tl.current
+        .from('#money_business h2', {
+          x: '-100vw',
+          clipPath: 'inset(0 0 100% 0)',
+          opacity: 0,
+          duration: 1.25,
+        })
+        .from('#money_business article p', {
+          y: '200',
+          clipPath: 'inset(0 0 100% 0)',
+          opacity: 0,
+          duration: 1,
+        })
+        .fromTo(
+          '#money_business article a',
+          {
+            scale: 0.6,
+            opacity: 0,
+          },
+          {
+            scale: 1,
+            opacity: 1,
+            duration: 1,
+          },
+          2,
+        )
+        .from('#gradients', {
+          scale: 0,
+          opacity: 0,
+          duration: 1,
+        })
+        .from('#money_business ul li', {
+          x: '100',
+          clipPath: 'inset(0 0 100% 0)',
+          opacity: 0,
+          stagger: 1,
+          duration: 1.5,
+        });
+    },
+    { dependencies: [] },
+  );
   return (
-    <section className='padding-inline section'>
+    <section id='money_business' className='padding-inline section'>
       <div className='container flex flex-col items-center justify-between gap-10 sm:flex-row'>
         {/* Left Column */}
         <article>

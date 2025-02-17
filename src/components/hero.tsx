@@ -46,7 +46,7 @@ const Hero = () => {
           },
           1,
         )
-        .from('#gradients', {
+        .from('#hero #gradients', {
           scale: 0,
           opacity: 0,
           duration: 1,
@@ -86,9 +86,9 @@ const Hero = () => {
                     Get{' '}
                     <span className='relative overflow-clip ~size-5/6'>
                       {/* Arrow 1: visible by default, slides out on hover */}
-                      <ArrowUpIcon className='absolute size-full transition-transform duration-300 group-hover:-translate-y-10 group-hover:translate-x-10' />
+                      <ArrowUpIcon className='absolute size-full transition-transform duration-500 group-hover:-translate-y-10 group-hover:translate-x-10' />
                       {/* Arrow 2: hidden by default, slides in on hover */}
-                      <ArrowUpIcon className='absolute size-full -translate-x-10 translate-y-10 transform transition-transform duration-300 group-hover:translate-x-0 group-hover:translate-y-0' />
+                      <ArrowUpIcon className='absolute size-full -translate-x-10 translate-y-10 transform transition-transform duration-500 group-hover:translate-x-0 group-hover:translate-y-0' />
                     </span>
                   </span>{' '}
                   Started
