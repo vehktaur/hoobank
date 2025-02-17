@@ -37,6 +37,7 @@ const Testimonials = () => {
           opacity: 0,
           duration: 1,
         })
+        .from('#testimonials #gradients', { scale: 0, opacity: 0, duration: 1 })
         .fromTo(
           '#testimonials .quote_card',
           {

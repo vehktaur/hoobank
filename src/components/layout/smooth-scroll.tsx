@@ -7,7 +7,7 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
     <ReactLenis
       root
       options={{
-        lerp: 0.07,
+        lerp: 0.06,
       }}
     >
       {children}
