@@ -1,3 +1,5 @@
+'use client';
+
 import Button from './ui/button';
 import { PaperPlaneIcon, ShieldIcon, StarIcon } from '@/assets/svgs';
 import Gradients from './ui/gradients';
