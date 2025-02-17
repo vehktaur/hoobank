@@ -1,19 +1,72 @@
+'use client';
+
 import images from '@/assets/images';
 import { QuoteIcon } from '@/assets/svgs';
 import { cn } from '@/lib/utils';
 import Image, { StaticImageData } from 'next/image';
 import Gradients from './ui/gradients';
 
+import { gsap, useGSAP } from '@/lib/gsap';
+import { useRef } from 'react';
+
 // Main section displaying testimonials
 const Testimonials = () => {
+  const tl = useRef<GSAPTimeline>(null);
+
+  useGSAP(
+    () => {
+      tl.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#testimonials',
+          start: '20% center',
+          scrub: true,
+          pin: true,
+        },
+      });
+
+      tl.current
+        .from('#testimonials h2', {
+          y: -500,
+          clipPath: 'inset(0 0 100% 0)',
+          opacity: 0,
+          duration: 1.25,
+        })
+        .from('#testimonials .first_p', {
+          x: '100vw',
+          clipPath: 'inset(0 0 100% 0)',
+          opacity: 0,
+          duration: 1,
+        })
+        .fromTo(
+          '#testimonials .quote_card',
+          {
+            backgroundImage:
+              'linear-gradient(144.39deg,#ffffff -278.56%,#6d6d6d -78.47%,#11101d 91.61%)',
+            opacity: 0,
+            scaleX: 0.5,
+            x: '-100vw',
+          },
+          {
+            backgroundImage: 'none',
+            opacity: 1,
+            scaleX: 1,
+            x: 0,
+            stagger: 0.5,
+            duration: 1.5,
+          },
+        );
+    },
+    { dependencies: [] },
+  );
+
   return (
-    <section className='padding-inline section'>
+    <section id='testimonials' className='padding-inline section'>
       <div className='container'>
         <section className='mb-20 flex flex-col items-center justify-between ~gap-0/6 sm:flex-row'>
           <h2 className='section-heading max-w-[29.375rem]'>
             What people are saying about us
           </h2>
-          <p className='mx-auto max-w-[28rem]'>
+          <p className='first_p mx-auto max-w-[28rem]'>
             Everything you need to accept card payments and grow your business
             anywhere on the planet.
           </p>
@@ -70,7 +123,7 @@ const QuoteCard = ({
   return (
     <article
       className={cn(
-        'flex max-w-[23rem] flex-col rounded-2.5xl px-10 py-[3.75rem] transition-all duration-300 hover:bg-black-gradient md:h-[24.7rem]',
+        'quote_card flex max-w-[23rem] flex-col rounded-2.5xl px-10 py-[3.75rem] transition-all duration-300 hover:bg-black-gradient md:h-[24.7rem]',
         className,
       )}
     >

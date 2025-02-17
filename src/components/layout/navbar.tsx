@@ -97,7 +97,7 @@ const Navbar = () => {
                   {navLinks.map(({ label, path }) => (
                     <li key={path}>
                       <NavLink
-                        className='block py-1.5 transition-all duration-300 hover:scale-105 hover:text-white'
+                        className='block py-2.5 transition-all duration-300 hover:scale-105 hover:text-white'
                         activeClassName='text-white'
                         href={path}
                       >
