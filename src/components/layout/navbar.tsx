@@ -1,8 +1,8 @@
 'use client';
 
 import { HamburgerIcon } from '@/assets/svgs';
-import Logo from './ui/logo';
-import NavLink from './ui/nav-link';
+import Logo from '@/components/ui/logo';
+import NavLink from '@/components/ui/nav-link';
 import { useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { useGSAP, gsap } from '@/lib/gsap';

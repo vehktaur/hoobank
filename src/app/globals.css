@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: clip;
 }
 
 @layer base {
@@ -66,9 +66,6 @@ body {
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
 }
 
 @layer utilities {
@@ -80,6 +77,10 @@ body {
   }
   .padding-inline {
     @apply px-5 sm:~px-8/16;
+  }
+
+  .section {
+    @apply relative min-h-dvh content-center overflow-x-clip;
   }
 
   .section-heading {

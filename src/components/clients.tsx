@@ -4,7 +4,7 @@ import Image from 'next/image';
 // Clients component displays a row of client logos
 const Clients = () => {
   return (
-    <section className='padding-inline pb-16'>
+    <section className='padding-inline section'>
       <div className='container flex items-center justify-between gap-5'>
         {/* Airbnb logo */}
         <div>

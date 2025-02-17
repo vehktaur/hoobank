@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 // The main Metrics component
 const Metrics = () => {
   return (
-    <section className='padding-inline mt-16 ~mb-20/32 md:mt-10'>
+    <section className='padding-inline section pt-16 ~pb-20/32'>
       <div className='container flex flex-col items-center md:flex-row md:gap-5'>
         <Metric className='mr-auto md:mr-0' stat='3800+' metric='User Active' />
 

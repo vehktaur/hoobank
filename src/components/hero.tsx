@@ -1,11 +1,33 @@
+'use client';
+
 import images from '@/assets/images';
 import { ArrowUpIcon, DiscountIcon, EllipseGradient } from '@/assets/svgs';
 import Image from 'next/image';
 import Gradients from './ui/gradients';
+import Link from 'next/link';
+
+import { gsap, useGSAP } from '@/lib/gsap';
+import { useRef } from 'react';
 
 const Hero = () => {
+  const tl = useRef<GSAPTimeline>(null);
+
+  // useGSAP(
+  //   () => {
+  //     tl.current = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: '#hero',
+  //         start: 'top bottom',
+  //         end: 'bottom top',
+  //         scrub: true,
+  //       },
+  //     });
+  //   },
+  //   { scope: '#hero' },
+  // );
+
   return (
-    <section className='mb-20'>
+    <section id='hero' className='nav-gap section'>
       <div className='flex flex-col ~text-sm/lg md:flex-row md:items-center'>
         {/* Left Column on Desktop */}
         <article className='relative shrink-0 pt-12 ~pl-5/[8.5rem] md:pt-0'>
@@ -24,7 +46,10 @@ const Hero = () => {
             <span className='text-turq-radial-gradient'>Generation</span> <br />{' '}
             Payment Method.
             {/* Get Started  */}
-            <button className='group absolute grid place-items-center rounded-full ~text-sm/lg ~top-0/3 ~right-4/[3rem] ~size-[5.5rem]/[8.75rem]'>
+            <Link
+              href='/'
+              className='group absolute grid place-items-center rounded-full ~text-sm/lg ~top-0/3 ~right-4/[3rem] ~size-[5.5rem]/[8.75rem]'
+            >
               <EllipseGradient className='absolute inset-0 size-full' />
               <p className='text-turq-linear-gradient font-medium'>
                 <span className='flex items-center gap-1'>
@@ -38,7 +63,7 @@ const Hero = () => {
                 </span>{' '}
                 Started
               </p>
-            </button>
+            </Link>
           </h1>
 
           {/* Hero Paragraph */}

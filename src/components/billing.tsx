@@ -4,7 +4,7 @@ import images from '@/assets/images';
 
 const Billing = () => {
   return (
-    <section className='padding-inline relative'>
+    <section className='padding-inline section'>
       <div className='container flex flex-col items-center justify-between gap-10 sm:flex-row-reverse'>
         {/* Right Column */}
         <article className='max-w-[30rem]'>

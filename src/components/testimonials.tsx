@@ -7,7 +7,7 @@ import Gradients from './ui/gradients';
 // Main section displaying testimonials
 const Testimonials = () => {
   return (
-    <section className='padding-inline relative overflow-x-clip pb-20 pt-12'>
+    <section className='padding-inline section'>
       <div className='container'>
         <section className='mb-20 flex flex-col items-center justify-between ~gap-0/6 sm:flex-row'>
           <h2 className='section-heading max-w-[29.375rem]'>
@@ -33,8 +33,8 @@ const Testimonials = () => {
             image={images.steve}
             position='Founder & Leader'
           >
-            Money makes your life easier. If you&apos;re lucky to have it, you&apos;re
-            lucky.
+            Money makes your life easier. If you&apos;re lucky to have it,
+            you&apos;re lucky.
           </QuoteCard>
           <QuoteCard
             name='Kenn Gallagher'

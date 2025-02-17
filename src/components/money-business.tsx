@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const MoneyBusiness = () => {
   return (
-    <section className='padding-inline relative pb-32'>
+    <section className='padding-inline section'>
       <div className='container flex flex-col items-center justify-between gap-10 sm:flex-row'>
         {/* Left Column */}
         <article>

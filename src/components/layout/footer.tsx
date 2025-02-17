@@ -1,4 +1,4 @@
-import Logo from './ui/logo';
+import Logo from '@/components/ui/logo';
 import Link from 'next/link';
 import { CopyrightIcon, SocialIcons } from '@/assets/svgs';
 import { Abel } from 'next/font/google';

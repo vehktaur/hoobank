@@ -4,7 +4,7 @@ import Button from './ui/button';
 const TryNow = () => {
   return (
     // Outer section with top and bottom margins
-    <section className='padding-inline mb-20 mt-10'>
+    <section className='padding-inline section'>
       {/* Main container for content*/}
       <div className='container flex flex-col items-start justify-between gap-8 rounded-2.5xl bg-black-gradient ~px-6/24 ~py-12/[4.5rem] sm:flex-row sm:items-center'>
         {/* Heading and description text */}

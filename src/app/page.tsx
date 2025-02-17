@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <main className='nav-gap'>
+    <main>
       <Hero />
       <Metrics />
       <MoneyBusiness />

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
-import { Navbar, Footer } from '@/components';
+import { Navbar, Footer, SmoothScroll } from '@/components';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -24,12 +24,15 @@ export default function RootLayout({
       <body
         className={cn(
           poppins.className,
-          'bg-[#00040F] text-mute-white antialiased',
+          'scrollbar scrollbar-track-mute-white scrollbar-thumb-[#00040E] scrollbar-w-[0.85rem] bg-[#00040F] text-mute-white antialiased',
         )}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        {' '}
+        <SmoothScroll>
+          <Navbar />
+          {children}
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );

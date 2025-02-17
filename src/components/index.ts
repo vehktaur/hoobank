@@ -1,5 +1,6 @@
-import Navbar from './navbar';
-import Footer from './footer';
+import Navbar from '@/components/layout/navbar';
+import Footer from '@/components/layout/footer';
+import SmoothScroll from '@/components/layout/smooth-scroll';
 import Billing from '@/components/billing';
 import CardDeal from '@/components/card-deal';
 import Clients from '@/components/clients';
@@ -20,4 +21,5 @@ export {
   TryNow,
   Navbar,
   Footer,
+  SmoothScroll,
 };

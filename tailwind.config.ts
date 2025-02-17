@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss';
 import fluid, { extract, screens, fontSize } from 'fluid-tailwind';
+import scrollbar from 'tailwind-scrollbar';
+import animate from 'tailwindcss-animate';
 
 export default {
   darkMode: ['class'],
@@ -87,5 +89,12 @@ export default {
       },
     },
   },
-  plugins: [fluid, require('tailwindcss-animate')],
+  plugins: [
+    animate,
+    fluid,
+    scrollbar({
+      nocompatible: true,
+      preferredStrategy: 'pseudoelements',
+    }),
+  ],
 } satisfies Config;
