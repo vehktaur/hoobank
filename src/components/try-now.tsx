@@ -21,6 +21,7 @@ const TryNow = () => {
 
       tl.current
         .from('#try_now .container', {
+          borderRadius: 0,
           scale: 0.7,
           opacity: 0,
           duration: 1.5,
@@ -57,7 +58,7 @@ const TryNow = () => {
     // Outer section with top and bottom margins
     <section id='try_now' className='padding-inline section'>
       {/* Main container for content*/}
-      <div className='container overflow-clip flex flex-col items-start justify-between gap-8 rounded-2.5xl bg-black-gradient ~px-6/24 ~py-12/[4.5rem] sm:flex-row sm:items-center'>
+      <div className='container flex flex-col items-start justify-between gap-8 overflow-clip rounded-2.5xl bg-black-gradient ~px-6/24 ~py-12/[4.5rem] sm:flex-row sm:items-center'>
         {/* Heading and description text */}
         <div>
           <h2 className='section-heading'>Let&apos;s try our service now!</h2>
