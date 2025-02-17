@@ -17,7 +17,7 @@ const MoneyBusiness = () => {
         scrollTrigger: {
           trigger: '#money_business',
           scrub: true,
-          pin: '#money_business',
+          pin: true,
         },
       });
 
@@ -47,7 +47,7 @@ const MoneyBusiness = () => {
           },
           2,
         )
-        .from('#gradients', {
+        .from('#money_business #gradients', {
           scale: 0,
           opacity: 0,
           duration: 1,
