@@ -7,7 +7,7 @@ import Gradients from './ui/gradients';
 import Link from 'next/link';
 
 // import { gsap, useGSAP } from '@/lib/gsap';
-import { useRef } from 'react';
+//import { useRef } from 'react';
 
 const Hero = () => {
  // const tl = useRef<GSAPTimeline>(null);
