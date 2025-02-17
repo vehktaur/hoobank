@@ -6,11 +6,11 @@ import Image from 'next/image';
 import Gradients from './ui/gradients';
 import Link from 'next/link';
 
-import { gsap, useGSAP } from '@/lib/gsap';
+// import { gsap, useGSAP } from '@/lib/gsap';
 import { useRef } from 'react';
 
 const Hero = () => {
-  const tl = useRef<GSAPTimeline>(null);
+ // const tl = useRef<GSAPTimeline>(null);
 
   // useGSAP(
   //   () => {
